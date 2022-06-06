@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/coming_events_alert"
+            android:icon="@drawable/ic_alert_white"
+            android:title=""
+            app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/sort_events"
+        android:icon="@drawable/ic_sort"
+        android:title=""
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_by_title"
+                    android:title="@string/sort_by_name" />
+                <item
+                    android:id="@+id/sort_by_due_time"
+                    android:title="@string/sort_by_due_date" />
+                <item
+                    android:id="@+id/sort_by_creation_date"
+                    android:title="@string/sort_by_creation_date" />
+                <item
+                    android:id="@+id/filter_by_complete"
+                    android:title="@string/show_complete" />
+                <item
+                    android:id="@+id/filter_by_incomplete"
+                    android:title="@string/show_incomplete" />
+                <item
+                    android:id="@+id/filter_by_favorite"
+                    android:title="@string/show_favorites" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/add_new_event"
+            android:icon="@drawable/ic_add_event"
+            android:title=""
+            app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/delete_event"
+            android:icon="@drawable/ic_delete_event"
+            android:title=""
+            app:showAsAction="ifRoom"/>
+
+    </group>
+</menu>
